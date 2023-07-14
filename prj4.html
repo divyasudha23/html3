@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light</title>
+</head>
+<body>
+    <style>
+    body{
+        align-items: center;
+        background:url("./images/nature-3082832_640.jpg");
+            background-repeat:no-repeat ;
+            background-size: cover;
+    
+    }
+    button
+    {
+        padding: 10px;align-items: center
+    }
+    img{
+        margin-left: 25%;
+        background-color: black;
+    }
+    
+    </style>
+
+    <script>
+        function glow(value)
+        {
+        var pic;
+        if(value==0)
+        pic ="images 2/bulb on 2.jpg";
+        else
+        pic="images 2/bulb off.jpg";
+        document.getElementById("bulb").src=pic;
+        }
+    </script>
+    <img id="bulb" src="./images 2/bulb off.jpg">
+    <button onclick="glow(0)" >Turn on</button>
+    <button onclick="glow(1)">Turn off</button>
+    
+</body>
+</html>
